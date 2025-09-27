@@ -14,6 +14,7 @@
 
 const purchases = Number(prompt("What is the final amount?"));
 let payableAmount = purchases;
+
 let discount = 0; 
 if(isNaN(purchases)){
     alert('incorrect input!!!!')
