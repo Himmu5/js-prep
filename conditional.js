@@ -35,7 +35,7 @@
 
 // note calc
 
-let amount = 5087
+let amount = 5287
 
 if(amount >= 500){
     console.log(`count of 500 notes is: ${Math.floor(amount/500)}`)
