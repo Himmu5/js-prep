@@ -72,14 +72,30 @@
 
 
 // Inverted RIght Angle Pattern
+// let prompt = require("prompt-sync")()
+// let number = Number(prompt("Enter a number: "));
+// for(let i = 0;i<number;i++){
+//     for(let j = 0;j<number - i - 1;j++){
+//         process.stdout.write(" ");
+//     }
+//     for(let j = number - 1;j>=number -i - 1;j--){
+//         process.stdout.write("*");
+//     }
+//     process.stdout.write("\n")
+// }
+
+// X pattern
+
 let prompt = require("prompt-sync")()
 let number = Number(prompt("Enter a number: "));
-for(let i = 0;i<number;i++){
-    for(let j = 0;j<number - i - 1;j++){
-        process.stdout.write(" ");
+
+for(let i =0;i<number;i++){
+    for(let j = 0;j<number;j++){
+        if(i == j || i+j == number -1){
+            process.stdout.write("*")
+        }else{
+            process.stdout.write(" ")
+        }
     }
-    for(let j = number - 1;j>=number -i - 1;j--){
-        process.stdout.write("*");
-    }
-    process.stdout.write("\n")
+    process.stdout.write('\n')
 }
