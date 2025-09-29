@@ -25,12 +25,23 @@
 // }
 
 // Right Angle Triagle
+// const prompt = require("prompt-sync")()
+// const number = Number(prompt("Enter a number: "))
+
+// for(let i = 0;i<number;i++){
+//     for(let j = 0;j<= i;j++){
+//         process.stdout.write("*");
+//     }
+//     process.stdout.write("\n")
+// }
+
 const prompt = require("prompt-sync")()
 const number = Number(prompt("Enter a number: "))
-
 for(let i = 0;i<number;i++){
-    for(let j = 0;j<= i;j++){
-        process.stdout.write("*");
+    let ascii = 65;
+    for(let j = 0;j<=i;j++){
+        process.stdout.write(String.fromCharCode(ascii));
+        ascii++;
     }
-    process.stdout.write("\n")
+    process.stdout.write("\n");
 }
