@@ -10,4 +10,16 @@
 // process.stdout.write(number)
 
 // Print five star
-for(let i =0;i<5;i++) console.log("*")
+// for(let i =0;i<5;i++) process.stdout.write("*")
+
+// Print box patter
+
+const prompt = require("prompt-sync")()
+const number = +prompt("Enter a number:")
+
+for(let i =0;i<number;i++){
+    for(let j = 0;j<number;j++){
+        process.stdout.write("*")
+    }
+    process.stdout.write("\n")
+}
