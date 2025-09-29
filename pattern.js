@@ -35,13 +35,25 @@
 //     process.stdout.write("\n")
 // }
 
+// const prompt = require("prompt-sync")()
+// const number = Number(prompt("Enter a number: "))
+// for(let i = 0;i<number;i++){
+//     let ascii = 65;
+//     for(let j = 0;j<=i;j++){
+//         process.stdout.write(String.fromCharCode(ascii));
+//         ascii++;
+//     }
+//     process.stdout.write("\n");
+// }
+
+
+// Inverted Right Angle Pattern
+
 const prompt = require("prompt-sync")()
 const number = Number(prompt("Enter a number: "))
 for(let i = 0;i<number;i++){
-    let ascii = 65;
-    for(let j = 0;j<=i;j++){
-        process.stdout.write(String.fromCharCode(ascii));
-        ascii++;
+    for(let j = number - 1;j>=i;j--){
+        process.stdout.write("*");
     }
-    process.stdout.write("\n");
+    process.stdout.write("\n")
 }
