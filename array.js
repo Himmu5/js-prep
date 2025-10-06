@@ -78,3 +78,32 @@
 //     userInput =Math.floor(userInput / 10);
 // }
 // console.log("reverse number: ", reverseNumber)
+
+
+// left rotation by 1
+// const prompt = require("prompt-sync")()
+// const k = Number(prompt("Enter a number: "))
+// let arr = [3, 5, 6, 7, 9, 12, 15]
+
+// for (let j = 0; j < k; j++) {
+//     let first = arr[0]
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i + 1];
+//     }
+//     arr[arr.length - 1] = first;
+// }
+
+// console.log(arr)
+
+// const prompt = require("prompt-sync")()
+// const k = Number(prompt("Enter a number: "))
+
+// const prompt = require("prompt-sync")()
+// const k = Number(prompt("Enter a number: "))
+// let arr = [3, 5, 6, 7, 9, 12, 15]
+// let result = []
+
+// for(let i = 0;i<arr.length;i++){
+//     result[(i+k)%arr.length] = arr[i];
+// }
+// console.log(result)
