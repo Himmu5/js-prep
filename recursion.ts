@@ -10,13 +10,13 @@
 
 // factorial
 
-const num = 2;
+const num = 1;
 
-const fibonachiNumber = ( inptNum: number ): number => {
+const factorialNumber = ( inptNum: number ): number => {
     if(inptNum == 0 || inptNum == 1 ){
         return 1;
     }
-    return inptNum * fibonachiNumber(inptNum - 1)
+    return inptNum * factorialNumber(inptNum - 1)
 }
 
-console.log(fibonachiNumber(num))
+console.log(factorialNumber(num))
